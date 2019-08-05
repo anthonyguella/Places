@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F20F1F222F7C5050026FFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20F1F122F7C5050026FFD8 /* AppDelegate.swift */; };
-		9F20F1F422F7C5050026FFD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20F1F322F7C5050026FFD8 /* ViewController.swift */; };
-		9F20F1F722F7C5050026FFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F20F1F522F7C5050026FFD8 /* Main.storyboard */; };
-		9F20F1FA22F7C5050026FFD8 /* Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F20F1F822F7C5050026FFD8 /* Places.xcdatamodeld */; };
+		9F20F1F422F7C5050026FFD8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20F1F322F7C5050026FFD8 /* MapViewController.swift */; };
 		9F20F1FC22F7C50B0026FFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20F1FB22F7C50B0026FFD8 /* Assets.xcassets */; };
 		9F20F1FF22F7C50B0026FFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F20F1FD22F7C50B0026FFD8 /* LaunchScreen.storyboard */; };
+		9F20F20B22F7CD400026FFD8 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F20F20A22F7CD400026FFD8 /* MapViewController.storyboard */; };
+		9FE31FED22F7D7A000A0C7EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20F1F122F7C5050026FFD8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F20F1EE22F7C5050026FFD8 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F20F1F122F7C5050026FFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F20F1F322F7C5050026FFD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F20F1F622F7C5050026FFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F20F1F922F7C5050026FFD8 /* Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Places.xcdatamodel; sourceTree = "<group>"; };
+		9F20F1F322F7C5050026FFD8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9F20F1FB22F7C50B0026FFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F20F1FE22F7C50B0026FFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F20F20022F7C50B0026FFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F20F20A22F7CD400026FFD8 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,16 +54,48 @@
 		9F20F1F022F7C5050026FFD8 /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				9F20F1F122F7C5050026FFD8 /* AppDelegate.swift */,
-				9F20F1F322F7C5050026FFD8 /* ViewController.swift */,
-				9F20F1F522F7C5050026FFD8 /* Main.storyboard */,
-				9F20F1FB22F7C50B0026FFD8 /* Assets.xcassets */,
-				9F20F1FD22F7C50B0026FFD8 /* LaunchScreen.storyboard */,
+				9F20F20822F7CC520026FFD8 /* MapView */,
+				9F20F20722F7CBEF0026FFD8 /* Support */,
 				9F20F20022F7C50B0026FFD8 /* Info.plist */,
-				9F20F1F822F7C5050026FFD8 /* Places.xcdatamodeld */,
 			);
 			path = Places;
 			sourceTree = "<group>";
+		};
+		9F20F20622F7CBDD0026FFD8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F20F1F322F7C5050026FFD8 /* MapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F20F20722F7CBEF0026FFD8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9F20F1FB22F7C50B0026FFD8 /* Assets.xcassets */,
+				9F20F1F122F7C5050026FFD8 /* AppDelegate.swift */,
+				9F20F1FD22F7C50B0026FFD8 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9F20F20822F7CC520026FFD8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				9F20F20622F7CBDD0026FFD8 /* ViewControllers */,
+				9F20F20922F7CCE40026FFD8 /* Storyboards */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		9F20F20922F7CCE40026FFD8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F20F20A22F7CD400026FFD8 /* MapViewController.storyboard */,
+			);
+			name = Storyboards;
+			path = Places/MapView/Storyboards;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -127,7 +157,7 @@
 			files = (
 				9F20F1FF22F7C50B0026FFD8 /* LaunchScreen.storyboard in Resources */,
 				9F20F1FC22F7C50B0026FFD8 /* Assets.xcassets in Resources */,
-				9F20F1F722F7C5050026FFD8 /* Main.storyboard in Resources */,
+				9F20F20B22F7CD400026FFD8 /* MapViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F20F1F422F7C5050026FFD8 /* ViewController.swift in Sources */,
-				9F20F1F222F7C5050026FFD8 /* AppDelegate.swift in Sources */,
-				9F20F1FA22F7C5050026FFD8 /* Places.xcdatamodeld in Sources */,
+				9FE31FED22F7D7A000A0C7EF /* AppDelegate.swift in Sources */,
+				9F20F1F422F7C5050026FFD8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9F20F1F522F7C5050026FFD8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F20F1F622F7C5050026FFD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F20F1FD22F7C50B0026FFD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,19 +361,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9F20F1F822F7C5050026FFD8 /* Places.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9F20F1F922F7C5050026FFD8 /* Places.xcdatamodel */,
-			);
-			currentVersion = 9F20F1F922F7C5050026FFD8 /* Places.xcdatamodel */;
-			path = Places.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9F20F1E622F7C5050026FFD8 /* Project object */;
 }
