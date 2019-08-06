@@ -8,14 +8,27 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate, LocationManagerObserver {
+    
+    var locationManager: LocationManagerType!
+    
+    func currentLocationUpdated(_ coordinates: CLLocationCoordinate2D) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        locationManager.addObserver(self)
+        self.navigationController?.isNavigationBarHidden = true
     }
-
-
+    
+    func inject(locationManager: LocationManagerType) {
+        self.locationManager = locationManager
+    }
+    
+    deinit {
+        locationManager.removeObserver(self)
+    }
 }
 

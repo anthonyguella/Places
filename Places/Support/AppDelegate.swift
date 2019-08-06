@@ -13,18 +13,18 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let locationManager: LocationManagerType = LocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
+        let nc = UINavigationController()
         let storyboard = UIStoryboard(name: "MapViewController", bundle: nil)
-        
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
-        
-        self.window?.rootViewController = initialViewController
+        initialViewController.locationManager = locationManager
+        nc.addChild(initialViewController)
+        self.window?.rootViewController = nc
         self.window?.makeKeyAndVisible()
-        
         return true
     }
 
