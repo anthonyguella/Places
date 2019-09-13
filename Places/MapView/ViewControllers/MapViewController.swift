@@ -12,15 +12,15 @@ import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, LocationManagerObserver {
     
-    var locationManager: LocationManagerType!
+    @IBOutlet var mapView: MKMapView!
     
-    func currentLocationUpdated(_ coordinates: CLLocationCoordinate2D) {
-    }
+    var locationManager: LocationManagerType!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.addObserver(self)
         self.navigationController?.isNavigationBarHidden = true
+        mapView.setUserTrackingMode(.follow, animated: true)
     }
     
     func inject(locationManager: LocationManagerType) {
@@ -30,5 +30,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, LocationMa
     deinit {
         locationManager.removeObserver(self)
     }
+    
+    func currentLocationUpdated(_ coordinates: CLLocationCoordinate2D) {
+        //let region = MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        //mapView.setRegion(region, animated: true)
+        //mapView.setUserTrackingMode(.follow, animated: true)
+    }
+    
 }
 

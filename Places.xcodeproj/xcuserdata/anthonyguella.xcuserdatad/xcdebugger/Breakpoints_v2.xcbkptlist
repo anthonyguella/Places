@@ -9,24 +9,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Places/Services/LocationManager/LocationManager.swift"
-            timestampString = "586741048.157541"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "addObserver(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Places/MapView/ViewControllers/MapViewController.swift"
-            timestampString = "586757393.453015"
+            timestampString = "586820963.467603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -42,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Places/Support/AppDelegate.swift"
-            timestampString = "586757393.453649"
+            timestampString = "586820963.468225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"

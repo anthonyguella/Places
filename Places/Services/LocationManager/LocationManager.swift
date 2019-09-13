@@ -45,7 +45,6 @@ class LocationManager: NSObject {
 extension LocationManager: LocationManagerType {
     func addObserver(_ observer: LocationManagerObserver) {
         subscribers.add(observer)
-        print("test")
     }
     
     func removeObserver(_ observer: LocationManagerObserver) {

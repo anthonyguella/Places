@@ -17,7 +17,3 @@ protocol LocationManagerType: NSObject, CLLocationManagerDelegate {
 protocol LocationManagerObserver: class {
     func currentLocationUpdated(_ coordinates: CLLocationCoordinate2D)
 }
-
-extension LocationManagerObserver {
-    func currentLocationUpdated() {}
-}

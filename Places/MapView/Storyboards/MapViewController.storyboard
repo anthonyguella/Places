@@ -32,6 +32,9 @@
                         <viewLayoutGuide key="safeArea" id="oym-N4-b6g"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="bO1-de-Hwp" id="dwK-BL-cOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acq-fW-HgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
